@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GC Inv — Politique de confidentialité</title>
+<style>
+  :root{
+    --paper:#FFFFFF; --rule:#DCDCD6; --rule-fort:#A5A59B;
+    --encre:#111110; --encre-2:#3B3B34; --encre-3:#6B6B61;
+    --rouge:#C41E25; --vert:#1F5A40;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:var(--paper);color:var(--encre);
+    font-family:Georgia,'Times New Roman',serif;
+    font-size:16.5px;line-height:1.65;padding:0 0 70px;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 26px}
+
+  header{border-bottom:2px solid var(--encre);padding:44px 0 22px;margin-bottom:8px}
+  .meta{
+    font-family:ui-monospace,Menlo,Consolas,monospace;
+    font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--encre-3);margin-bottom:18px;
+  }
+  h1{font-size:clamp(26px,4.6vw,38px);line-height:1.12;letter-spacing:-.015em;margin-bottom:14px}
+  .chapeau{font-size:17px;color:var(--encre-2);max-width:54ch}
+
+  section{padding:32px 0 4px;border-bottom:1px solid var(--rule)}
+  section:last-of-type{border-bottom:none}
+  h2{font-size:21px;letter-spacing:-.012em;margin-bottom:14px}
+  h3{font-size:16px;margin:20px 0 7px}
+  p{margin-bottom:13px;max-width:68ch}
+  strong{font-weight:700}
+
+  ul{margin:0 0 14px;padding-left:0;list-style:none;max-width:68ch}
+  li{position:relative;padding-left:20px;margin-bottom:7px}
+  li::before{content:'';position:absolute;left:2px;top:.7em;width:7px;height:1.5px;background:var(--rule-fort)}
+
+  table{width:100%;border-collapse:collapse;margin:16px 0 20px;font-size:14.5px}
+  th{
+    text-align:left;padding:0 12px 8px 0;border-bottom:1.5px solid var(--encre);
+    font-family:ui-monospace,Menlo,Consolas,monospace;font-size:10px;
+    letter-spacing:.12em;text-transform:uppercase;color:var(--encre-3);font-weight:500;
+  }
+  td{padding:10px 12px 10px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+  td:first-child{font-weight:700;width:34%}
+
+  .cadre{
+    background:#F4F6F4;border-left:3px solid var(--vert);
+    padding:17px 21px 15px;margin:20px 0;max-width:68ch;
+  }
+  .cadre p{margin-bottom:9px;font-size:15.5px}
+  .cadre p:last-child{margin-bottom:0}
+
+  footer{
+    border-top:2px solid var(--encre);margin-top:38px;padding-top:15px;
+    font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11px;
+    letter-spacing:.06em;color:var(--encre-3);
+  }
+  @media(max-width:620px){.wrap{padding:0 19px}td:first-child{width:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="meta">GC Inv · Extension Chrome · Politique de confidentialité</div>
+  <h1>Politique de confidentialité</h1>
+  <p class="chapeau">
+    GC Inv est un outil professionnel de saisie d'inventaire. Il ne collecte
+    aucune donnée personnelle et ne transmet rien à des tiers.
+  </p>
+</header>
+
+<section>
+  <h2>En résumé</h2>
+
+  <div class="cadre">
+    <p><strong>Aucune donnée personnelle n'est collectée.</strong></p>
+    <p><strong>Aucune donnée n'est transmise à des tiers</strong> — ni régie
+       publicitaire, ni outil de mesure d'audience, ni courtier de données.</p>
+    <p><strong>Aucun suivi de navigation.</strong> L'extension ne s'active que
+       sur les pages d'inventaire Macromatix.</p>
+    <p><strong>Les données d'inventaire restent chez le client</strong>, dans
+       son propre classeur Google Sheets.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Ce que l'extension traite</h2>
+
+  <table>
+    <tr><th>Donnée</th><th>Usage</th><th>Où elle réside</th></tr>
+    <tr>
+      <td>Identifiant et code de licence</td>
+      <td>Vérifier que l'utilisateur dispose d'un droit d'usage valide</td>
+      <td>Poste de l'utilisateur, et serveur de licences de l'éditeur</td>
+    </tr>
+    <tr>
+      <td>Adresse du classeur d'inventaire</td>
+      <td>Lire les quantités à saisir et y écrire le catalogue d'articles</td>
+      <td>Poste de l'utilisateur</td>
+    </tr>
+    <tr>
+      <td>Références et libellés d'articles</td>
+      <td>Faire correspondre chaque article entre Macromatix et le classeur</td>
+      <td>Classeur du client</td>
+    </tr>
+    <tr>
+      <td>Quantités d'inventaire</td>
+      <td>Reporter le comptage saisi par le client dans Macromatix</td>
+      <td>Classeur du client, et son compte Macromatix</td>
+    </tr>
+  </table>
+
+  <p>
+    Ces informations sont exclusivement des données de gestion de stock d'un
+    établissement de restauration. Elles ne concernent aucune personne physique.
+  </p>
+</section>
+
+<section>
+  <h2>Ce que l'extension ne fait pas</h2>
+  <ul>
+    <li>Elle ne lit pas l'historique de navigation</li>
+    <li>Elle ne lit pas les mots de passe ni les données de remplissage automatique</li>
+    <li>Elle ne s'active sur aucun site autre que Macromatix</li>
+    <li>Elle n'affiche aucune publicité</li>
+    <li>Elle n'utilise aucun outil d'analyse ou de mesure d'audience</li>
+    <li>Elle ne vend, ne loue et ne cède aucune donnée</li>
+    <li>Elle ne conserve aucune donnée d'inventaire sur les serveurs de l'éditeur</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Pourquoi ces autorisations</h2>
+
+  <table>
+    <tr><th>Autorisation</th><th>Raison</th></tr>
+    <tr>
+      <td>Stockage local</td>
+      <td>Conserver la licence et les réglages sur le poste, pour ne pas les
+          redemander à chaque ouverture. Rien n'est stocké ailleurs.</td>
+    </tr>
+    <tr>
+      <td>macromatix.net</td>
+      <td>Lire la liste des articles affichée à l'écran et y reporter les
+          quantités. C'est la fonction même de l'extension.</td>
+    </tr>
+    <tr>
+      <td>sheets.googleapis.com</td>
+      <td>Lire le classeur d'inventaire désigné par la licence, afin d'y
+          récupérer les quantités saisies par l'utilisateur.</td>
+    </tr>
+    <tr>
+      <td>script.google.com</td>
+      <td>Vérifier la validité de la licence, et transmettre le catalogue
+          d'articles au classeur du client.</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h2>Conservation et suppression</h2>
+
+  <p>
+    Les données enregistrées sur le poste sont supprimées lorsque l'utilisateur
+    désinstalle l'extension, ou lorsqu'il retire sa licence depuis la fenêtre
+    de l'extension.
+  </p>
+  <p>
+    Le serveur de licences conserve, pour chaque licence, la date du dernier
+    contrôle et un compteur d'utilisations. Ces éléments servent uniquement à
+    la gestion des droits d'usage et sont supprimés à la résiliation.
+  </p>
+</section>
+
+<section>
+  <h2>Sécurité</h2>
+
+  <p>
+    Toutes les communications empruntent des connexions chiffrées (HTTPS).
+    L'accès au classeur du client est protégé par une clé propre à ce classeur,
+    que le client peut renouveler à tout moment.
+  </p>
+  <p>
+    L'extension n'accède qu'au classeur associé à la licence utilisée. Elle ne
+    peut atteindre aucun autre document de l'utilisateur.
+  </p>
+</section>
+
+<section>
+  <h2>Modifications</h2>
+  <p>
+    Toute évolution de cette politique sera publiée sur cette page, avec une
+    date de mise à jour. Les changements significatifs seront signalés aux
+    titulaires de licence.
+  </p>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>
+    Éditeur : <strong>Gwenn Hermouet</strong><br>
+    Courriel : <strong>[À COMPLÉTER]</strong>
+  </p>
+  <p>
+    Pour toute question relative à cette politique ou à l'exercice de vos
+    droits, écrivez à l'adresse ci-dessus.
+  </p>
+</section>
+
+<footer>
+  Dernière mise à jour : [DATE] · © 2026 Gwenn Hermouet · Tous droits réservés
+</footer>
+
+</div>
+</body>
+</html>
